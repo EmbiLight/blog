@@ -1,0 +1,47 @@
+body {
+  background: chartreuse;
+  color: white;
+}
+
+header, footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: calc((100vw - 1200px)/2) 1fr 1fr 1fr 1fr calc((100vw - 1200px)/2);
+  grid-template-rows: repeat(3, minmax(100px, max-content));
+  grid-gap: 10px;
+}
+
+
+
+header {
+  grid-column: 1 / -1;
+  background-color: rgba(141, 181, 128, 1);
+}
+
+header .inner {
+  grid-column: 2 / 4;
+}
+
+main {
+  grid-column: 2 / 5;
+  min-height: 500px;
+  background-color: rgba(126, 137, 135, 1);
+}
+
+aside {
+  grid-column: 5;
+  background-color: #fff;
+}
+
+footer {
+  grid-column: 1 / -1;
+  background-color: rgba(75, 74, 103, 1);
+}
+
+
