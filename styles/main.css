@@ -1,5 +1,4 @@
 body {
-  background: chartreuse;
   color: white;
 }
 
@@ -26,7 +25,6 @@ header {
 }
 
 header .inner {
-  grid-column: 2 / 4;
 }
 
 main {
@@ -37,7 +35,7 @@ main {
 
 aside {
   grid-column: 5;
-  background-color: #fff;
+  background: chartreuse;
 }
 
 footer {
