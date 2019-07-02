@@ -8,11 +8,12 @@ header, footer {
   align-items: center;
   justify-content: center;
   min-height: 150px;
+  padding: 0 110px;
 }
 
 .wrapper {
   display: grid;
-  grid-template-columns: calc((100vw - 1200px)/2) 1fr 1fr 1fr 1fr calc((100vw - 1200px)/2);
+  grid-template-columns: 100px 1fr 1fr 1fr 1fr 100px;
   grid-template-rows: repeat(3, minmax(100px, max-content));
   grid-gap: 10px;
 }
