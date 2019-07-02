@@ -1,5 +1,23 @@
 body {
   color: white;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  transition: 0.3s;
+  color: #000;
+}
+
+.right {
+  height: fit-content;
+  padding: 20px 0;
+  flex: 0 1 30%;
 }
 
 header, footer {
@@ -10,8 +28,45 @@ header, footer {
   padding: 0 110px;
 }
 
+.menu {
+  justify-content: space-between;
+  display: flex;
+}
+
 .menu li {
   display: inline-block;
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.icons {
+  justify-content: space-between;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.icons {
+  display: flex;
+  flex: 0 1 70%;
+}
+
+.icon:hover {
+  transition: 0.4s;
+  background-color: #fff;
+  color: #000;
 }
 
 .wrapper {
