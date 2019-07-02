@@ -10,6 +10,10 @@ header, footer {
   padding: 0 110px;
 }
 
+.menu li {
+  display: inline-block;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: 100px 1fr 1fr 1fr 1fr 100px;
@@ -17,14 +21,23 @@ header, footer {
   grid-gap: 10px;
 }
 
-
-
 header {
   grid-column: 1 / -1;
   background-color: rgba(141, 181, 128, 1);
 }
 
-header .inner {
+.inner {
+  justify-content: space-between;
+}
+
+.inner .img-wrapper {
+  max-height: 100px;
+  max-width: 100px;
+}
+
+.img-wrapper  img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 main {
