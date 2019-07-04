@@ -108,7 +108,12 @@ a:hover {
   margin: 10px 0;
 }
 
-.inner {
+.header-search {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  display: none;
 }
 
 .img-wrapper {
@@ -225,7 +230,7 @@ a:hover {
     justify-content: center;
   }
 
-  .hamburger, #menuToggle {
+  #menuToggle, .header-search, .hamburger {
     display: block;
   }
 
