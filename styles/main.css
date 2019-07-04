@@ -14,14 +14,13 @@ header, footer {
 
 header {
   grid-column: 1 / -1;
-  background-color: rgba(141, 181, 128, 1);
+  background-color: rgba(100, 100, 100, 0.75);
   justify-content: space-between;
   position: relative;
 }
 
 main {
   grid-column: 2 / 5;
-  min-height: 500px;
   grid-template-columns: repeat(auto-fill, 290px);
   display: grid;
   grid-gap: 10px;
@@ -29,8 +28,82 @@ main {
 
 aside {
   grid-column: 5;
-  background: chartreuse;
 }
+
+aside .social{
+  justify-content: space-between;
+  display: flex;
+  flex: 1 1;
+  margin: 15px 0;
+}
+
+.avatar img {
+  border-radius: 50%;
+}
+
+.author-img {
+  width: 50px;
+  height: auto;
+  display: block;
+  margin-right: 10px;
+}
+
+.autor-name {
+  margin: 0;
+}
+.comments {
+  margin: 15px 0;
+}
+
+.comment-body {
+  display: inline-block;
+  width: 100%;
+}
+
+.single-comment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+}
+
+
+.subscriber, .searcher {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.subscriber button, .searcher button {
+  display: flex;
+  justify-content: center;
+  flex: 1 1 25%;
+}
+
+.subscriber input, .searcher input {
+  border-radius: 3px;
+  padding: 5px;
+  display: flex;
+  flex: 1 1 70%;
+}
+
+.tags {
+  padding: 10px;
+  border: 1px solid grey;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.tags a {
+  color: #000;
+}
+.tags a:hover {
+  color: red;
+}
+
 
 footer {
   grid-column: 1 / -1;
@@ -45,6 +118,11 @@ a {
 a:hover {
   transition: 0.3s;
   color: #000;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
 }
 
 .hamburger {
