@@ -41,6 +41,11 @@ aside .social{
   border-radius: 50%;
 }
 
+.top-author {
+  display: flex;
+  justify-content: center;
+}
+
 .author-img {
   width: 50px;
   height: auto;
@@ -48,6 +53,9 @@ aside .social{
   margin-right: 10px;
 }
 
+.hidden-aside-bottom {
+  display: none;
+}
 .autor-name {
   margin: 0;
 }
@@ -58,6 +66,10 @@ aside .social{
 .comment-body {
   display: inline-block;
   width: 100%;
+}
+
+.hidden-large {
+  display: none !important;
 }
 
 .single-comment {
@@ -123,6 +135,19 @@ a:hover {
 .author-info {
   display: flex;
   flex-direction: column;
+}
+
+.top-author.author-info {
+  flex-direction: row;
+  justify-content: space-between;
+  grid-column: 2 / 6;
+}
+
+.top-author.author-info .avatar, .top-author.author-info .bottom-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 
 .hamburger {
@@ -370,12 +395,16 @@ a:hover {
     justify-content: center;
   }
 
-  #menuToggle, .header-search, .hamburger {
-    display: block;
+  #menuToggle, .header-search, .hamburger, .hidden-large {
+    display: block !important;
   }
 
-  .social, .menu, .right {
+  aside, .social, .menu, .right, .author-info {
     display: none;
   }
 
+  .hidden-aside-bottom, hidden-aside-top {
+    display: block;
+    grid-column: 2 / 6;
+  }
 }
