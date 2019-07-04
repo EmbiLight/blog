@@ -134,6 +134,13 @@ a:hover {
 .single-post .img-wrp {
   max-width: 100%;
   height: auto;
+  overflow: hidden;
+}
+
+.single-post .img-wrp img:hover{
+  transition: 0.3s;
+  opacity: 0.8;
+  transform: scale(1.2);
 }
 
 
