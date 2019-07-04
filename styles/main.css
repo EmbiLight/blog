@@ -14,14 +14,13 @@ header, footer {
 
 header {
   grid-column: 1 / -1;
-  background-color: rgba(141, 181, 128, 1);
+  background-color: rgba(100, 100, 100, 0.75);
   justify-content: space-between;
   position: relative;
 }
 
 main {
   grid-column: 2 / 5;
-  min-height: 500px;
   grid-template-columns: repeat(auto-fill, 290px);
   display: grid;
   grid-gap: 10px;
@@ -29,8 +28,94 @@ main {
 
 aside {
   grid-column: 5;
-  background: chartreuse;
 }
+
+aside .social{
+  justify-content: space-between;
+  display: flex;
+  flex: 1 1;
+  margin: 15px 0;
+}
+
+.avatar img {
+  border-radius: 50%;
+}
+
+.top-author {
+  display: flex;
+  justify-content: center;
+}
+
+.author-img {
+  width: 50px;
+  height: auto;
+  display: block;
+  margin-right: 10px;
+}
+
+.hidden-aside-bottom {
+  display: none;
+}
+.autor-name {
+  margin: 0;
+}
+.comments {
+  margin: 15px 0;
+}
+
+.comment-body {
+  display: inline-block;
+  width: 100%;
+}
+
+.hidden-large {
+  display: none !important;
+}
+
+.single-comment {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+}
+
+
+.subscriber, .searcher {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.subscriber button, .searcher button {
+  display: flex;
+  justify-content: center;
+  flex: 1 1 25%;
+}
+
+.subscriber input, .searcher input {
+  border-radius: 3px;
+  padding: 5px;
+  display: flex;
+  flex: 1 1 70%;
+}
+
+.tags {
+  padding: 10px;
+  border: 1px solid grey;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.tags a {
+  color: #000;
+}
+.tags a:hover {
+  color: red;
+}
+
 
 footer {
   grid-column: 1 / -1;
@@ -45,6 +130,24 @@ a {
 a:hover {
   transition: 0.3s;
   color: #000;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-author.author-info {
+  flex-direction: row;
+  justify-content: space-between;
+  grid-column: 2 / 6;
+}
+
+.top-author.author-info .avatar, .top-author.author-info .bottom-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 
 .hamburger {
@@ -292,12 +395,16 @@ a:hover {
     justify-content: center;
   }
 
-  #menuToggle, .header-search, .hamburger {
-    display: block;
+  #menuToggle, .header-search, .hamburger, .hidden-large {
+    display: block !important;
   }
 
-  .social, .menu, .right {
+  aside, .social, .menu, .right, .author-info {
     display: none;
   }
 
+  .hidden-aside-bottom, hidden-aside-top {
+    display: block;
+    grid-column: 2 / 6;
+  }
 }
