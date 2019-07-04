@@ -19,6 +19,8 @@ header, footer {
 header {
   grid-column: 1 / -1;
   background-color: rgba(141, 181, 128, 1);
+  justify-content: space-between;
+  position: relative;
 }
 
 main {
@@ -45,6 +47,10 @@ a {
 a:hover {
   transition: 0.3s;
   color: #000;
+}
+
+.hamburger {
+  display: none;
 }
 
 .icons {
@@ -81,6 +87,11 @@ a:hover {
 
 .menu li {
   display: inline-block;
+  margin-right: 10px;
+}
+
+.menu li:nth-last-of-type {
+  margin-right: 0;
 }
 
 .social {
@@ -92,12 +103,12 @@ a:hover {
 .wrapper {
   display: grid;
   grid-template-columns: 100px 1fr 1fr 1fr 1fr 100px;
-  grid-template-rows: repeat(3, minmax(100px, max-content));
+  grid-template-rows: repeat(1, minmax(100px, max-content));
   grid-gap: 10px;
+  margin: 10px 0;
 }
 
 .inner {
-  justify-content: space-between;
 }
 
 .img-wrapper {
@@ -112,9 +123,9 @@ a:hover {
 
 #menuToggle {
   display: none;
-  position: relative;
-  top: -40px;
-  left: -80px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
 
   z-index: 1;
 
@@ -210,11 +221,15 @@ a:hover {
 }
 
 @media screen and (max-width: 767px) {
-  #menuToggle {
+  header  {
+    justify-content: center;
+  }
+
+  .hamburger, #menuToggle {
     display: block;
   }
 
-  .social, .menu {
+  .social, .menu, .right {
     display: none;
   }
 
