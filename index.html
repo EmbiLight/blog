@@ -5,26 +5,70 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./styles/reset.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--  <link rel="stylesheet" href="./styles/reset.css">-->
   <link rel="stylesheet" href="./styles/main.css">
+
   <title>Document</title>
 </head>
 <body>
-<div class="wrapper">
+
 
   <header>
-    <div class="inner">
-      <p>header</p>
-    </div>
-  </header>
+    <nav role="navigation" class="hamburger">
+      <div id="menuToggle">
+        <input type="checkbox"/>
 
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <ul id="menu">
+          <a href="#"><li>Home</li></a>
+          <a href="#"><li>About</li></a>
+          <a href="#"><li>Contact</li></a>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="img-wrapper">
+      <img src="assets/img/F1.png" alt="logo">
+    </div>
+    <div class="right">
+      <div class="social">
+        <a href="#"><span class="icon"><i class="fa fa-search"></i></span></a>
+        <div class="icons">
+          <a href="#"><span class="icon"><i class="fa fa-facebook-f"></i></span></a>
+          <a href="#"><span class="icon"><i class="fa fa-linkedin"></i></span></a>
+          <a href="#"><span class="icon"><i class="fa fa-pinterest"></i></span></a>
+          <a href="#"><span class="icon"><i class="fa fa-instagram"></i></span></a>
+        </div>
+      </div>
+
+      <nav role="navigation" class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </nav>
+
+    </div>
+
+    <span class="header-search">
+      <a href="#">
+        <i class="fa fa-search"></i>
+      </a>
+    </span>
+
+  </header>
+  <div class="wrapper">
     <main><p>main</p></main>
     <aside><p>aside</p></aside>
+  </div>
 
   <footer>
     <p>footer</p>
   </footer>
 
-</div>
 </body>
 </html>
