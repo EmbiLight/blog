@@ -13,7 +13,7 @@ header, footer {
 .wrapper {
   display: grid;
   grid-template-columns: 100px 1fr 1fr 1fr 1fr 100px;
-  grid-template-rows: repeat(3, minmax(100px, max-content));
+  grid-template-rows: repeat(auto-fill, minmax(100px, max-content));
   grid-gap: 10px;
 }
 
@@ -31,6 +31,8 @@ main {
   grid-column: 2 / 5;
   min-height: 500px;
   background-color: rgba(126, 137, 135, 1);
+  grid-template-columns: repeat(auto-fill, minmax(1fr, max-content));
+  display: grid;
 }
 
 aside {
