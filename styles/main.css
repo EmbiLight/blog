@@ -58,6 +58,7 @@ aside .social{
 }
 .autor-name {
   margin: 0;
+  display: inline-block;
 }
 .comments {
   margin: 15px 0;
@@ -66,6 +67,16 @@ aside .social{
 .comment-body {
   display: inline-block;
   width: 100%;
+}
+
+.comment-text {
+  display: block;
+}
+
+.date {
+  color: grey;
+  font-size: 12px;
+  margin-left: 10px;
 }
 
 .hidden-large {
