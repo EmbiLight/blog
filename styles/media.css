@@ -24,7 +24,9 @@
   .single-post{
     margin: 10px;
   }
-
+  .single-comment {
+    text-align: left;
+  }
   .wrapper {
     display: flex;
     flex-wrap: wrap;
